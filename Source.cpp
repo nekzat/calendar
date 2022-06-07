@@ -14,14 +14,14 @@ void printDate(vector<Event> EventList){
     int month;
     int day[12] = { 31,28,31,30,31,30,31,31,30,31,30,31 };
     int dayrem;
-    cout << "½Ð¿é¤J¦~¥÷¡G";
+    cout << "è«‹è¼¸å…¥å¹´ä»½ï¼š";
     cin >> year;
     while (year <= 0) {
          cout <<"really ?? =_=" << endl ;
-         cout << "½Ð¿é¤J¦~¥÷¡G" ;
+         cout << "è«‹è¼¸å…¥å¹´ä»½ï¼š" ;
          cin >> year;
     }
-    cout << "½Ð¿é¤J¤ë¥÷¡G" ;
+    cout << "è«‹è¼¸å…¥æœˆä»½ï¼š" ;
     cin >> month;
     remainder = (year - 1 + (year - 1) / 4 - (year - 1) / 100 + (year - 1) / 400) % 7;
     if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
@@ -31,7 +31,7 @@ void printDate(vector<Event> EventList){
     }
     while (month < 1 || month > 12) {
         cout << "really ?? =_=" << endl ;
-        cout << "½Ð¿é¤J¤ë¥÷¡G" ;
+        cout << "è«‹è¼¸å…¥æœˆä»½ï¼š" ;
         cin >> month;
         remainder = (year - 1 + (year - 1) / 4 - (year - 1) / 100 + (year - 1) / 400) % 7;
         if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
@@ -55,8 +55,8 @@ void printDate(vector<Event> EventList){
 
     dayrem = (remainder + 1) % 7;
 
-    cout << " ¦è¤¸" << year << "¦~" << month << "¤ë" << endl;
-    cout << " ¤é ¤@ ¤G ¤T ¥| ¤­ ¤»" << endl;
+    cout << " è¥¿å…ƒ" << year << "å¹´" << month << "æœˆ" << endl;
+    cout << " æ—¥ ä¸€ äºŒ ä¸‰ å›› äº” å…­" << endl;
 
     for (i = 0; i < dayrem; i++) {
         cout << setw(3) << setfill(' ') << "";
@@ -247,7 +247,7 @@ int main()
                 break;
             }
         }
-        if (i < -1||i>8) { cout << " =.= "<<endl<<endl; }
+        if (i < -1||i>8) { cout << " https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley "<<endl<<endl; }
     };
     writeFlie(eventlist);
     return 0;
