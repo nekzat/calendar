@@ -247,7 +247,7 @@ int main()
                 break;
             }
         }
-        if (i < -1||i>8) { cout << " https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley "<<endl<<endl; }
+        if (i < -1||i>8) { cout << " https://youtu.be/dQw4w9WgXcQ "<<endl<<endl; }
     };
     writeFlie(eventlist);
     return 0;
